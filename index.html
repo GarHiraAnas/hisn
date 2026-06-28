@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gar Hira | غار حراء</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Tajawal:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Tajawal:wght@500;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+</head>
+<body>
+
+<header>
+    <div class="menu-btn" onclick="toggleDropdown()">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+        
+        <div class="dropdown-menu" id="myDropdown">
+            <a href="https://www.hisn.org.sa/" target="_blank" class="association-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="card-content">
+                    <span class="card-label">الموقع الرسمي</span>
+                    <h4 class="card-title">موقع جمعية حصن</h4>
+                </div>
+                <div class="card-arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="logo-area">
+        <img src="C:\Users\hayon\Desktop\anas hisn\images\logo.png.jpg" alt="Hisn Association Logo">
+        <div class="logo-text">جمعية حصن لخدمة ضيوف الرحمن</div>
+    </div>
+</header>
+
+    <section class="hero-section">
+        <p class="sub-title">إحدى مبادرات جمعية حصن</p>
+        <h1>غار حراء.. مهد الوحي ومبتدأ الرسالة</h1>
+    </section>
+
+    <section class="lang-list">
+        <a href="ar.html" class="lang-box"><img src="C:\Users\hayon\Desktop\anas hisn\images\ar-btn.png.png" alt="العربية"></a>
+        <a href="en.html" class="lang-box"><img src="C:\Users\hayon\Desktop\anas hisn\images\en-btn.png.png" alt="English"></a>
+        <a href="ur.html" class="lang-box"><img src="C:\Users\hayon\Desktop\anas hisn\images\ur-btn.png.png" alt="اردو"></a>
+        <a href="id.html" class="lang-box"><img src="C:\Users\hayon\Desktop\anas hisn\images\id-btn.png.png" alt="Indonesia"></a>
+        <a href="tr.html" class="lang-box"><img src="C:\Users\hayon\Desktop\anas hisn\images\tr-btn.png.png" alt="Türkçe"></a>
+        <a href="fr.html" class="lang-box"><img src="C:\Users\hayon\Desktop\anas hisn\images\fr-btn.png.png" alt="Français"></a>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-right">
+                <div class="contact-item">
+                    <span>+966564500335</span>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-item">
+                    <span>@jm_hisn</span>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-left">
+                <p>جمعية حصن لخدمة</p>
+                <p>الحاج والمعتمر والزائر</p>
+            </div>
+        </div>
+    </footer>
+<script>
+function toggleDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.menu-btn') && !event.target.matches('.menu-btn *')) {
+        var dropdowns = document.getElementsByClassName("dropdown-menu");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+</script>
+</body>
+</html>
