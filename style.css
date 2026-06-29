@@ -104,6 +104,32 @@ header {
     border-color: #AA8F2F;
     background-color: #faf8f5;
 }
+.custom-visitor-card {
+    background-color: #D9CABB;
+    border-radius: 24px;
+    padding: 30px 20px;
+    max-width: 450px;
+    margin: 30px auto;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    direction: rtl;
+}
+
+.custom-visitor-card .visitor-title {
+    font-family: 'Inria Serif', 'Tajawal', serif; 
+    color: #333333;
+    font-size: 22px;
+    margin: 0 0 15px 0;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.custom-visitor-card .visitor-counter-box img {
+    height: 45px;
+    filter: contrast(120%) brightness(95%);
+    display: inline-block;
+    vertical-align: middle;
+}
 
 .card-icon {
     width: 34px;
