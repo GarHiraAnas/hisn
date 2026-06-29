@@ -103,5 +103,27 @@ window.onclick = function(event) {
     }
 }
 </script>
+<script>
+  window.addEventListener('load', function() {
+      if (typeof gtag === 'function') {
+          gtag('event', 'screen_view', {
+              'app_name': 'hisn_project_counter',
+              'screen_name': 'Main Screen Counter'
+          });
+          
+          let counterElement = document.getElementById('ga-active-users');
+          if (counterElement) {
+              let gaCount = localStorage.getItem('ga_cached_views') || 1;
+              gaCount = parseInt(gaCount) + 1;
+              localStorage.setItem('ga_cached_views', gaCount);
+              
+              counterElement.innerText = gaCount.toLocaleString();
+              counterElement.style.fontSize = "28px";
+              counterElement.style.fontWeight = "bold";
+              counterElement.style.color = "#333333";
+          }
+      }
+  });
+</script>
 </body>
 </html>
